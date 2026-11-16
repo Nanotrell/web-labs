@@ -1,0 +1,58 @@
+@media print {
+	.background-block,
+	.background-block2,
+	.second-background-block,
+	.second-background-block2,
+	nav,
+	button,
+	form,
+	.order-buttons {
+		display: none !important;
+	}
+
+	body,
+	.container {
+		background: #ffffff !important;
+		color: #000000 !important;
+		position: static !important;
+	}
+
+	* {
+		box-shadow: none !important;
+		filter: none !important;
+		animation: none !important;
+		text-shadow: none !important;
+	}
+
+	a {
+		color: #000000 !important;
+		text-decoration: underline !important;
+	}
+
+	.dishes {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 5px;
+	}
+
+	.dish-card {
+		break-inside: avoid;
+		border: 1px solid #000000;
+		border-radius: 0;
+		padding: 10px;
+		page-break-inside: avoid;
+	}
+
+	.dish-card img {
+		border-radius: 0;
+	}
+
+	h1, h2, h3 {
+		text-shadow: none !important;
+		page-break-after: avoid;
+	}
+
+	table {
+		page-break-inside: avoid;
+	}
+}
